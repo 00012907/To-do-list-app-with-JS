@@ -1,0 +1,105 @@
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #1A1F16;
+    color: white;
+    transition: 0.3s;
+}
+
+.todo {
+    width: 500px;
+    border: 2px solid white;
+    margin: 50px auto;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.todo .input {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.todo .input input {
+    width: 100%;
+    border: 1px solid white;
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+    outline: none;
+}
+
+.todo .input input:focus {
+    border: 1px solid gold;
+}
+
+.todo h2 {
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.todo .input button {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-weight: 600;
+}
+
+.todo .input button:hover {
+    color: gold;
+    border: 1px solid gold;
+}
+
+button {
+    cursor: pointer;
+}
+
+.todo .input input::placeholder {
+    color: white;
+    opacity: 70%;
+}
+
+.todo .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.todo .list li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gold;
+    border-radius: 12px;
+    padding: 0.7rem 1rem;
+}
+
+.todo .list li .btns {
+    display: flex;
+}
+
+.todo .list .btns button {
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 5px;
+}
+
+.todo .list .btns button.edit {
+    color: goldenrod;
+}
+
+.todo .list .btns button.delete {
+    color: #CC3F0C;
+}
+
+.todo .list .btns button.completed {
+    color: #33673B;
+}
+
+.todo .list li span {
+    letter-spacing: 1px;
+}
